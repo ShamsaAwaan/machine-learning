@@ -1,6 +1,5 @@
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.datasets import load_iris
 from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -18,7 +17,7 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, random_state=42)
 # clf = LogisticRegression()
 # clf.fit(x_train, y_train)
 
-model = KNeighborsClassifier(n_neighbors=8)
+model = KNeighborsClassifier(n_neighbors=3)
 model.fit(X_train, y_train)
 
 
