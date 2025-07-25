@@ -9,10 +9,11 @@ x= df[['Experience']]
 y= df['Salary']
 x_train,x_test,y_train, y_test = train_test_split(x,y, test_size=0.2)
 print(" training feature\n",x_train)
-print("test feature\n",x_test)
+print("testing feature\n",x_test)
 print("training label\n",y_train)
-print("test label\n",y_test)
+print("testing label\n",y_test)
 print(x_train.shape)
+print(y_train.shape)
 model = LinearRegression()
 model.fit(x_train, y_train)
 predictions = model.predict(x_test)
